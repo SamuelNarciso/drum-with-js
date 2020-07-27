@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+}
+
+body {
+	background: #061161;
+	background-image: url('../img/Bg.jpg');
+	background-size: cover;
+}
+.container {
+	color: white;
+	max-width: 1400px;
+	margin: 0 auto;
+	width: 90%;
+}
+.container .drums {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+.container .drums .box {
+	border: 4px solid #1d1b1b;
+	border-radius: 10px;
+	background: #0a091385;
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	padding: 10px;
+	transition: all 0.09s;
+	text-align: center;
+	width: 100%;
+}
+
+.container .drums .box .letter {
+	font-size: 62px;
+}
+
+.container .drums .box .description {
+	color: #d68710;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: #d68710;
+	box-shadow: 0 0 10px #d68710;
+}
+
+#A::after {
+	content: 'CLAP';
+}
+#S::after {
+	content: 'HIHAT';
+}
+#D::after {
+	content: 'KICK';
+}
+#F::after {
+	content: 'OPENHAT';
+}
+#G::after {
+	content: 'BOOM';
+}
+#H::after {
+	content: 'RIDE';
+}
+#J::after {
+	content: 'SNARE';
+}
+#K::after {
+	content: 'TOM';
+}
+#L::after {
+	content: 'TINK ';
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.container .drums {
+		flex-direction: column;
+		/* flex-wrap: wrap; */
+		align-content: center;
+		height: 100vh;
+		margin: 0;
+	}
+	.container .drums .box {
+		width: 50%;
+		margin: 0;
+	}
+}
