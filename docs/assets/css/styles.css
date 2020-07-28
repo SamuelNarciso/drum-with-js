@@ -103,19 +103,24 @@ body {
 		width: 100%;
 	}
 	.drums {
-		width: 100%;
-		padding: 0;
-		flex-direction: row;
 		align-content: center;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		
 	}
-	.drums .pad {
-		height: 30%;
-		width: 25%;
+	.container .drums .pad {
+		width: 30%;
+		height: 100%;
 		margin: 0;
 		padding: 0;
 	}
 
+	
+
 	.drums .pad .box {
+		width: 100%;
 		padding: 0;
 	}
 	.drums .pad .box .description {
@@ -126,34 +131,35 @@ body {
 @media only screen and (max-width: 350px) {
 	.drums .pad .box {
 		padding-bottom: 5px;
-		height: 35%;
-		margin-bottom: 20px;
+		height: 45%;
+		margin-bottom: 2px;
 	}
 
 	.drums .pad .box .letter {
-		font-size: 2.5em;
+		font-size: 2.8em;
 	}
 	.drums .pad .box .description {
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 }
-@media only screen and (max-height: 300px) {
+
+@media only screen and (max-height: 420px) {
 	body {
 		width: 100%;
 		height: 100%;
 	}
 
 	.drums .pad .box {
-		padding-bottom: 1px;
-		height: 33%;
+		/* padding-bottom: 1px; */
+		height: 40%;
 		/* margin-bottom: 20px; */
 	}
 
 	.drums .pad .box .letter {
-		font-size: 2.5em;
+		font-size: 2.4em;
 	}
 
 	.drums .pad .box .description {
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 }
