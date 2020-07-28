@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: monospace;
+	word-wrap: break-word;
 }
 
 body {
@@ -10,45 +11,59 @@ body {
 	background-image: url('../img/Bg.jpg');
 	background-size: cover;
 }
+.note {
+	color: #d68710;
+	text-align: center;
+}
+
 .container {
 	color: white;
 	max-width: 1400px;
 	margin: 0 auto;
-	width: 90%;
+	/* height: 100; */
 }
 .container .drums {
 	align-items: center;
 	display: flex;
-	height: 100vh;
+	flex-wrap: wrap;
+	height: 20rem;
 	justify-content: center;
 }
+.container .drums .pad {
+	width: 30%;
+	height: 100%;
+}
+
 .container .drums .box {
 	border: 4px solid #1d1b1b;
 	border-radius: 10px;
 	background: #0a091385;
+
 	display: flex;
 	flex-direction: column;
-	margin: 5px;
-	padding: 10px;
+
+	height: 50%;
+
 	transition: all 0.09s;
 	text-align: center;
-	/* width: 100%; */
+	width: 100%;
 }
 
 .container .drums .box .letter {
-	font-size: 62px;
+	font-size: 4em;
 }
 
 .container .drums .box .description {
 	color: #d68710;
-	font-size: 26px;
+	font-size: 1.8em;
 	font-weight: bold;
-	letter-spacing: 4px;
+	/* letter-spacing: 4px; */
 }
 
 .playing {
 	transform: scale(1.1);
 	border-color: #d68710;
+	background: #d68710;
 	box-shadow: 0 0 10px #d68710;
 }
 
@@ -83,21 +98,63 @@ body {
 /* Responsive design */
 
 @media only screen and (max-width: 600px) {
-	.container {
+	body {
 		width: 100%;
-		height: 100%;
-		margin: 0 auto;
 	}
-	.container .drums {
+	.drums {
+		width: 100%;
+		padding: 0;
+		flex-direction: row;
 		align-content: center;
-		flex-direction: column;
-		/* flex-wrap: wrap; */
-		height: 100%;
-		margin: 0;
 	}
-	.container .drums .box {
-		width: 100%;
-		height: 33%;
+	.drums .pad {
+		/* background: rgb(151, 17, 17); */
+		height: 30%;
+		width: 25%;
 		margin: 0;
+		padding: 0;
+	}
+
+	.drums .pad .box {
+		padding: 0;
+	}
+	.drums .pad .box .description {
+		letter-spacing: 0;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.drums .pad .box {
+		padding-bottom: 5px;
+		height: 35%;
+		margin-bottom: 20px;
+	}
+
+	.drums .pad .box .letter {
+		font-size: 2.5em;
+	}
+	.drums .pad .box .description {
+		font-size: 1em;
+	}
+}
+@media only screen and (max-height: 300px) {
+	body{
+		width: 100%;
+		height: 100%;
+	}
+
+
+	.drums .pad .box {
+		padding-bottom: 1px;
+		height: 33%;
+		/* margin-bottom: 20px; */
+	}
+
+	.drums .pad .box .letter {
+		font-size: 2.5em;
+	}
+
+	.drums .pad .box .description {
+		font-size: 1em;
 	}
 }

@@ -2,49 +2,60 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
 		<link rel="stylesheet" href="assets/css/styles.css" />
 		<title>Drum with JS</title>
 	</head>
 	<body>
 		<div class="container">
+			<h3 class="note">press the keyboard key or click the button</h3>
 			<section class="drums">
-				<article data-key="97" class="box">
-					<span class="letter">A</span>
-					<span class="description" id="A"></span>
-				</article>
-				<article data-key="115" class="box">
-					<span class="letter">S</span>
-					<span class="description" id="S"></span>
-				</article>
-				<article data-key="100" class="box">
-					<span class="letter">D</span>
-					<span class="description" id="D"></span>
-				</article>
-				<article data-key="102" class="box">
-					<span class="letter">F</span>
-					<span class="description" id="F"></span>
-				</article>
-				<article data-key="103" class="box">
-					<span class="letter">G</span>
-					<span class="description" id="G"></span>
-				</article>
-				<article data-key="104" class="box">
-					<span class="letter">H</span>
-					<span class="description" id="H"></span>
-				</article>
-				<article data-key="106" class="box">
-					<span class="letter">J</span>
-					<span class="description" id="J"></span>
-				</article>
-				<article data-key="107" class="box">
-					<span class="letter">K</span>
-					<span class="description" id="K"></span>
-				</article>
-				<article data-key="108" class="box">
-					<span class="letter">L</span>
-					<span class="description" id="L"></span>
-				</article>
+				<div class="pad">
+					<article data-key="97" class="box">
+						<span class="letter">A</span>
+						<span class="description" id="A"></span>
+					</article>
+					<article data-key="115" class="box">
+						<span class="letter">S</span>
+						<span class="description" id="S"></span>
+					</article>
+					<article data-key="100" class="box">
+						<span class="letter">D</span>
+						<span class="description" id="D"></span>
+					</article>
+				</div>
+
+				<div class="pad">
+					<article data-key="102" class="box">
+						<span class="letter">F</span>
+						<span class="description" id="F"></span>
+					</article>
+					<article data-key="103" class="box">
+						<span class="letter">G</span>
+						<span class="description" id="G"></span>
+					</article>
+					<article data-key="104" class="box">
+						<span class="letter">H</span>
+						<span class="description" id="H"></span>
+					</article>
+				</div>
+				<div class="pad">
+					<article data-key="106" class="box">
+						<span class="letter">J</span>
+						<span class="description" id="J"></span>
+					</article>
+					<article data-key="107" class="box">
+						<span class="letter">K</span>
+						<span class="description" id="K"></span>
+					</article>
+					<article data-key="108" class="box">
+						<span class="letter">L</span>
+						<span class="description" id="L"></span>
+					</article>
+				</div>
 			</section>
 		</div>
 		<audio data-key="97" src="assets/sounds/clap.wav"></audio>
@@ -55,7 +66,7 @@
 		<audio data-key="104" src="assets/sounds/ride.wav"></audio>
 		<audio data-key="106" src="assets/sounds/snare.wav"></audio>
 		<audio data-key="107" src="assets/sounds/tom.wav"></audio>
-		<audio data-key="108" ="assets/sounds/tink.wav"></audio>
+		<audio data-key="108" src="assets/sounds/tink.wav"></audio>
 
 		<script src="assets/js/index.js"></script>
 	</body>
