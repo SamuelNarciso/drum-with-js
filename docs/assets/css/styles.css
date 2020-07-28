@@ -14,6 +14,7 @@ body {
 .note {
 	color: #d68710;
 	text-align: center;
+	margin-bottom: 3px;
 }
 
 .container {
@@ -30,7 +31,7 @@ body {
 	justify-content: center;
 }
 .container .drums .pad {
-	width: 30%;
+	width: 20%;
 	height: 100%;
 }
 
@@ -108,7 +109,6 @@ body {
 		align-content: center;
 	}
 	.drums .pad {
-		/* background: rgb(151, 17, 17); */
 		height: 30%;
 		width: 25%;
 		margin: 0;
@@ -123,7 +123,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
 	.drums .pad .box {
 		padding-bottom: 5px;
 		height: 35%;
@@ -138,11 +138,10 @@ body {
 	}
 }
 @media only screen and (max-height: 300px) {
-	body{
+	body {
 		width: 100%;
 		height: 100%;
 	}
-
 
 	.drums .pad .box {
 		padding-bottom: 1px;
